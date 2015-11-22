@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IDB_Proposals</title>
+  <script src="jquery-2.1.0.min.js"></script>
+  <script src="diffWidget.js"></script>
+  <link rel="stylesheet" type="text/css" href="diffWidget.css">
+  <style type="text/css">
+    body {
+      margin: 10px auto;
+      width: 960px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>IADB NDC Proposals</h1>
+  <h2>See the before and after models proposed</h2>
+
+  <h3>Bike path connecting PIC to Trou Du Nord</h3>
+  <div id="ex1"></div>
+
+  <h3>TROU DU NORD: Transformation for a new Intermodal Transportation Station</h3>
+    <div id="ex2"></div>
+
+  <h3>Urban Development on the freeway Limonade</h3>
+  <div id="ex3"></div>
+
+  <script>
+    $(document).ready(function(){
+
+      $('#ex1').diffWidget({
+      'width': '666px',
+        'height': '379px',
+        'top': 'images/bike_before.jpg',
+        'bottom': 'images/bike_after.jpg',
+        'position': '75%'
+      });
+
+      $('#ex2').diffWidget({
+        
+       'width': '604px',
+        'height': '238px',
+        'top': 'images/renderbef.jpg',
+        'bottom': 'images/renderaft.jpg',
+        'position': '75%'
+      });
+
+      $('#ex3').diffWidget({
+      'width': '664px',
+        'height': '221px',
+        'top': 'images/limon_before.jpg',
+        'bottom': 'images/limon_after.jpg',
+        'position': '75%'
+      })
+
+    })    
+  </script>
+
+</body>
+</html>
